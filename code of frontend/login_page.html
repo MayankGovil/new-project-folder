@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login_page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			margin: 0 auto;
+			max-width: 600px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+		}
+
+		.login-form {
+			width: 50%;
+			margin-right: 20px;
+		}
+
+		.registration-link {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+			border-left: 1px solid #ccc;
+			/* background-color: blue; */
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		form {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="password"] {
+			padding: 5px;
+			width: 100%;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		input[type="text"]::placeholder, input[type="password"]::placeholder {
+			color: #ccc;
+		}
+
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		button[type="reset"] {
+			background-color: #9e9e9a;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button[type="reset"]:hover {
+			background-color: #1272df;
+		}
+
+		.registration-link a {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #eee;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		.registration-link a:hover {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+     
+	
+
+
+
+	<div class="container">
+		<div class="login-form">
+			<h1>Login</h1>
+			<form>
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+				<button type="submit"><a href="Finalyearproject_homepage.html">Login</a></button>
+				<button type="reset">reset</button>
+			</form>
+		</div>
+		<div class="registration-link">
+			<a href="homepage2.html">New User? Register here</a>
+		</div>
+	</div>
+</body>

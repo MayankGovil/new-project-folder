@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HomePage2</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+			width: 300px;
+			height: 300px;
+			margin: 20px;
+			transition: box-shadow 0.2s ease-in-out;
+			text-decoration: none;
+		}
+
+		.box:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.box-icon {
+			font-size: 3rem;
+			margin-top: 30px;
+			color: #333;
+		}
+
+		.box h3 {
+			font-size: 1.5rem;
+			margin: 30px 0 10px;
+			color: #333;
+		}
+
+		.box p {
+			font-size: 1rem;
+			color: #777;
+			text-align: center;
+			margin: 0 20px;
+			line-height: 1.5;
+		}
+
+		.student .box-icon {
+			color: #007bff;
+		}
+
+		.owner .box-icon {
+			color: #28a745;
+		}
+
+		.admin .box-icon {
+			color: #dc3545;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="Student_signup page.html" class="box student">
+			<div class="box-icon"><i class="fas fa-graduation-cap"></i></div>
+			<h3>Student</h3>
+			<p>Click here for sign-in as student</p>
+		</a>
+		<a href="Owener Personal Details.html" class="box owner">
+			<div class="box-icon"><i class="fas fa-user-tie"></i></div>
+			<h3>Owner</h3>
+			<p>Click here for sign-in as owner</p>
+		</a>
+		<a href="Other service Sigin_up page.html" class="box admin">
+			<div class="box-icon"><i class="fas fa-cogs"></i></div>
+			<h3>Service provider</h3>
+			<p>Click here for sign-in as the Service</p>
+		</a>
+	</div>
+</body>
+</html>

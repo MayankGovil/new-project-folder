@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Owner Personal Details</title>
+  <style>
+    body {
+      background-image:image-set("foder jodhpur image.jpg");
+      background-size: cover;
+      /* opacity: 0.5; */
+    }
+    form {
+      width: 400px;
+      margin: 0 auto;
+      background-color: rgb(117, 148, 175);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+      font-weight: bold;
+    }
+    input[type="submit"], input[type="reset"], button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color:  #e5991a;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    
+
+  <!-- making forms using form and grid-->
+  <div class="container">
+    <div class="row"><!--add div-->
+        <div class="col-8">
+          <div class="container " style="text-align: center; margin-top: 10px;">
+            <h1><span class="badge bg-secondary">Owner Personal Details</span></h1>
+          </div>
+            <!-- FORMS -->
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputname">Name of Owner</label>
+                        <input type="text" class="form-control" id="inputname" placeholder="Enter Your Full Name"required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputname">Owner Mobile no:</label>
+                        <input type="tel" class="form-control" id="inputSmobile" placeholder=" Owner Mobile No:"required>
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-4">
+                    <label for="inputState">Gender of Owner</label>
+                    <select id="inputState" required class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email_id of Owner</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email_id" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password"required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                </div>                             
+                <!--
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">State</label>
+                        <input type="text" class="form-control" id="inputState" required>
+                    </div>                                                                       
+                </div>
+                <br>-->
+                <div class="file">
+                    <label class="mt-0">Any Goverment_id</label><br>
+                    <!-- <img src="https://thumbs.dreamstime.com/z/letter-mg-signature-logo-template-vector-initial-design-fashion-photography-wedding-beauty-business-company-193661861.jpg"style height="100px" width="100px"  class="mr-3" alt="Mayank"> -->
+                    <input type="file" class="form-control" placeholder="signature of student" id="signstudent"
+                        required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            I'm not Robot
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Reset</button>
+                <button type="submit" class="btn btn-primary"><a href="Finalyearproject_homepage.html">GO BACK</a></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
